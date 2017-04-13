@@ -6,13 +6,11 @@ package ru.job4j;
  *version 1.1
 */
 public class Calculate {
-	
 	/**
-	*Метод выводящий "Hello World." на экран
+	*Метод выводящий "Hello World" на экран.
 	*@param args - arguments from command line
 	*/
-	
-	public static void main (String[] args){
+	public static void main(String[] args) {
 		System.out.println("Hello World");
 	}
 }
