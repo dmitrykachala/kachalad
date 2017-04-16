@@ -12,9 +12,6 @@ public class CalculatorTest {
 	*Метод тестирующий сложение.
 	*/
     @Test
-	/**
-	*Метод тестирующий сложение.
-	*/
     public void whenAddOnePlusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.add(-14.0, 7.0);
@@ -25,6 +22,7 @@ public class CalculatorTest {
 	/**
 	*Метод тестирующий вычитание.
 	*/
+	@Test
 	public void whenSubOneMinusOneThenTwo() {
         Calculator calc = new Calculator();
         calc.subtract(-14.0, 7.0);
@@ -35,6 +33,7 @@ public class CalculatorTest {
 	/**
 	*Метод тестирующий умножение.
 	*/
+	@Test
 	public void whenMultiplyOneMultiOneThenTwo() {
         Calculator calc = new Calculator();
         calc.multiply(-14.0, 7.0);
@@ -45,6 +44,7 @@ public class CalculatorTest {
 	/**
 	*Метод тестирующий деление.
 	*/
+	@Test
 	public void whenDivideOneDivOneThenTwo() {
         Calculator calc = new Calculator();
         calc.divide(-14.0, 7.0);
