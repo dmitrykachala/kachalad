@@ -44,7 +44,6 @@ public class Point {
 	*@return - результат работы метода
 	*/
   public boolean is(int a, int b) {
-	//Point pPoint = new Point(1, 5);
     return getY() == a * getX() + b;
 }
 }
