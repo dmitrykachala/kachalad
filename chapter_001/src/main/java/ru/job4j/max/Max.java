@@ -11,7 +11,7 @@ public class Max {
 	*/
 	private int maximum;
 	/**
-	*Метод определяющий максимум.
+	*Метод определяющий максимум из двух чисел.
 	*@param first - первое целое число
 	*@param second - второе целое число
 	*@return - результат работы метода
@@ -19,5 +19,16 @@ public class Max {
 	public int max(int first, int second) {
 		maximum = first > second ? first : second;
 		return maximum;
+	}
+	/**
+	*Метод определяющий максимумиз трех чисел.
+	*@param first - первое целое число
+	*@param second - второе целое число
+	*@param third - третье целое число
+	*@return - результат работы метода
+	*/
+	public int max3(int first, int second, int third) {
+		//maximum = first > second ? first : second;
+		return max(max(first, second), third);
 	}
 }

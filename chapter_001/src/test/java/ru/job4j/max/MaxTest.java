@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 /**
-*Класс тестирования элементарного калькулятора.
+*Класс тестирования нахождения максимума.
 */
 public class MaxTest {
 	/**
@@ -14,8 +14,8 @@ public class MaxTest {
     @Test
     public void whenMaxOneAndOneThenTwo() {
 		Max mMax = new Max();
-        int result = mMax.max(3, 5);
-        int expected = 5;
+        int result = mMax.max3(334, 333, 400);
+        int expected = 400;
         assertThat(result, is(expected));
     }
 }
