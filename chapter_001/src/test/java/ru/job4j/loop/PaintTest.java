@@ -29,7 +29,7 @@ public class PaintTest {
         assertThat(result, is(expected));
     }
 	/**
-	*Тестирование метода, который рисует пирамиду высотой 5.
+	*Тестирование метода, который рисует пирамиду высотой 4.
 	*/
     @Test
     public void whenPiramidWithHeightFourThenStringWithFourRows() {
