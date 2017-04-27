@@ -19,13 +19,13 @@ public class Paint {
 		int galka = 2 * strNumber - 1;
 		for (int count = 1; count <= width + 1; count++) {
 			if ((count <= space) || ((count > space + galka) && (count < width + 1))) {
-				buffer = buffer.append(" ");
+				buffer.append(" ");
 			} else if (count <= space + galka) {
-				buffer = buffer.append("^");
+				buffer.append("^");
 			}
 		}
 		if (strNumber != h) {
-			buffer = buffer.append(System.getProperty("line.separator"));
+			buffer.append(System.getProperty("line.separator"));
 		}
   }
   return buffer.toString();

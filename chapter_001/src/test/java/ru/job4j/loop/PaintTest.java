@@ -25,7 +25,7 @@ public class PaintTest {
     public void whenPiramidWithHeightThreeThenStringWithThreeRows() {
         Paint paint = new Paint();
         String result = paint.piramid(3);
-        String expected = String.format("  ^  %s ^^^ %s^^^^^", System.getProperty("line.separator"), System.getProperty("line.separator"));
+        String expected = String.format("  ^  %s ^^^ %<s^^^^^", System.getProperty("line.separator"));
         assertThat(result, is(expected));
     }
 	/**
@@ -35,7 +35,7 @@ public class PaintTest {
     public void whenPiramidWithHeightFourThenStringWithFourRows() {
         Paint paint = new Paint();
         String result = paint.piramid(4);
-        String expected = String.format("   ^   %s  ^^^  %s ^^^^^ %s^^^^^^^", System.getProperty("line.separator"), System.getProperty("line.separator"), System.getProperty("line.separator"));
+        String expected = String.format("   ^   %s  ^^^  %<s ^^^^^ %<s^^^^^^^", System.getProperty("line.separator"));
         assertThat(result, is(expected));
     }
 }
