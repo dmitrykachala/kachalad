@@ -7,6 +7,24 @@ package ru.job4j.loop;
 */
 public class Board {
 	/**
+	*Метод, который заполняет строку.
+	*@param a - первый сивол для замены
+	*@param b - второй сивол для замены
+	*@param length - длина строки
+	*@return - результат
+	*/
+	public String fillRow(char a, char b, int length) {
+		StringBuilder buffer1 = new StringBuilder();
+		for (int counter = 1; counter <= length; counter++) {
+			if (counter % 2 == 1) {
+				buffer1.append(a);
+			} else {
+				buffer1.append(b);
+			}
+		}
+		return buffer1.toString();
+	}
+	/**
 	*Метод, который отрисовывает доску.
 	*@param width - ширина доски
 	*@param height - высота доски
@@ -16,22 +34,10 @@ public class Board {
 	StringBuilder buffer = new StringBuilder();
 	for (int strNumber = 1; strNumber <= height; strNumber++) {
 		if (strNumber % 2 == 1) {
-		for (int count = 1; count <= width; count++) {
-			if (count % 2 == 1) {
-				buffer.append("X");
+		buffer.append(fillRow('X', ' ', width));
 			} else {
-				buffer.append(" ");
+		buffer.append(fillRow(' ', 'X', width));
 			}
-		}
-		} else {
-			for (int count = 1; count <= width; count++) {
-			if (count % 2 == 0) {
-				buffer.append("X");
-			} else {
-				buffer.append(" ");
-			}
-		}
-		}
 		if (strNumber != height) {
 			buffer.append(System.getProperty("line.separator"));
 		}
