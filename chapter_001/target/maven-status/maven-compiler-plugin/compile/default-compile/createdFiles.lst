@@ -6,4 +6,5 @@ ru\job4j\calculator\Calculator.class
 ru\job4j\condition\Point.class
 ru\job4j\loop\Board.class
 ru\job4j\loop\Counter.class
+ru\job4j\array\Turn.class
 ru\job4j\max\Max.class
