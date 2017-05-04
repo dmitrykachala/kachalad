@@ -4,6 +4,7 @@ ru\job4j\loop\BoardTest.class
 ru\job4j\loop\CounterTest.class
 ru\job4j\max\MaxTest.class
 ru\job4j\array\BubbleSortTest.class
+ru\job4j\array\RotateArrayTest.class
 ru\job4j\CalculateTest.class
 ru\job4j\condition\TriangleTest.class
 ru\job4j\loop\FactorialTest.class
