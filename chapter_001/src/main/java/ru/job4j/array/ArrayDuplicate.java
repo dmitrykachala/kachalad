@@ -15,14 +15,14 @@ public class ArrayDuplicate {
 	*/
 	public String[] remove(String[] array) {
 		int copy = 0;
-		for (int countOut = 0; countOut < array.length - 1; countOut++) {
+	for (int countOut = 0; countOut < array.length - 1 - copy; countOut++) {
 			for (int countIn = countOut + 1; countIn < array.length - 1; countIn++) {
 				String tmpOut = array[countOut];
 				String tmpIn = array[countIn];
 				if (tmpOut == tmpIn) {
-					array[countIn] = array[countIn + 1];
-					array[countIn + 1] = tmpIn;
-					//copy += 1;
+					array[countIn] = array[array.length - 1 - copy];
+					array[array.length - 1 - copy] = tmpIn;
+					copy += 1;
 				}
 			}
 	}
