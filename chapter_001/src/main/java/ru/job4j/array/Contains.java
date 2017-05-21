@@ -32,11 +32,11 @@ public class Contains {
 		char[] subArr = Contains.intoArray(sub);
 		if(subArr.length <= originArr.length) {
 				for (int j = 0; j < originArr.length; j++){
-					if((originArr[j] == subArr[0])&&(subArr.length <= originArr.length - j)){
+					if((originArr[j].equals(subArr[0]))&&(subArr.length <= originArr.length - j)){
 						char[] tmpArr = Arrays.copyOfRange(originArr, j, originArr.length - 1);
 						int signal = 1;
 						for (int k = 1; k < subArr.length; k++) {
-							if(tmpArr[k] == subArr[k]) {
+							if(tmpArr[k].equals(subArr[k])) {
 								signal += 1;
 							}
 						}
