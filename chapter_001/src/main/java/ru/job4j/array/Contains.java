@@ -30,9 +30,11 @@ public class Contains {
 	public boolean contains(String origin, String sub) {
 		char[] originArr = Contains.intoArray(origin);
 		char[] subArr = Contains.intoArray(sub);
+		if(subArr.length == 0) return true;
+		if(originArr.length == 0) return false;
 		if(subArr.length <= originArr.length) {
-				for (int j = 0; j < originArr.length; j++){
-					if((originArr[j].equals(subArr[0]))&&(subArr.length <= originArr.length - j)){
+				for (int j = 0; j <= originArr.length - subArr.length; j++){
+					if(originArr[j].equals(subArr[0])){
 						char[] tmpArr = Arrays.copyOfRange(originArr, j, originArr.length - 1);
 						int signal = 1;
 						for (int k = 1; k < subArr.length; k++) {
@@ -44,9 +46,7 @@ public class Contains {
 							return true;
 					}
 				}		
-		} else if(i == subArr.length - 1)
-			return true;
-		else
+		}
 			return false;
 }
 }
