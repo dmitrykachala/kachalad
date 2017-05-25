@@ -14,19 +14,6 @@ public class Contains {
 	*@param sub - подстрока
 	*@return - результат
 	*/
-	public char[] intoArray (String input) {
-		char[] arr = new char[input.length()];
-		for (int i = 0; i < input.length(); i++) {
-			arr[i] = input.charAt(i);
-		}
-		return arr;
-	}
-	/**
-	*Метод, который определяет содержится ли заданная подстрока в указанной строке.
-	*@param origin - исходная строка
-	*@param sub - подстрока
-	*@return - результат
-	*/
 	public boolean contains(String origin, String sub) {
 		char[] originArr = origin.toCharArray();
 		char[] subArr = sub.toCharArray();;
@@ -35,7 +22,6 @@ public class Contains {
 		if(subArr.length <= originArr.length) {
 				for (int j = 0; j <= originArr.length - subArr.length; j++){
 					if(originArr[j].equals(subArr[0])){
-						//char[] tmpArr = Arrays.copyOfRange(originArr, j, originArr.length - 1);
 						int signal = 1;
 						for (int k = j + 1; k < subArr.length; k++) {
 							if(originArr[j+k].equals(subArr[k])) {
