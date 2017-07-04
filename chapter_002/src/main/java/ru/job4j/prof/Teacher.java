@@ -1,8 +1,11 @@
 package ru.job4j.prof;
+/**
 
+*/
 public class Teacher extends Profession {
-	People people = new People();
+	/**
+	*@param people -
+	*/
 	public void teach(People people) {
-		
 	}
 }
